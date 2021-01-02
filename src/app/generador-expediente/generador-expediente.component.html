@@ -1,0 +1,116 @@
+<div class='row'>
+  <div class='col-sm-2'>
+  <pm-sidebar-medico></pm-sidebar-medico>
+</div>
+  <div class='col-sm-8'>
+    <div>
+      <div class='div-formulario'>
+      <tabset>
+        
+        <tab heading="Datos" id="tab1">
+          <div class='row'>
+            <div class='col-sm-4'>
+              <ul>  
+                <li>Nombre:</li>
+                <li>NSS:</li>
+                <li>Edad:</li>
+                <li class='li-parrafo'>Dirección de Domicilio:</li>
+                <li style='padding-top: 40px;'>Nacionalidad:</li>
+                <li style='padding-top: 30px;'>Género:</li>
+                <li style='padding-top: 30px;'>Teléfono:</li>
+                <li style='padding-top: 30px;'>Correo: </li>
+              </ul>
+            </div>
+            <div class='col-sm-8'>
+              <ul>  
+                <li><input class='text' placeholder="Javier Duarte"></li>
+                <li><input class='text' placeholder="08420567"></li>
+                <li><input class='text'placeholder="18"></li>
+                <li><input class='input-parrafo'></li>
+                <li><input placeholder="Mexicano"></li>
+                <li><input placeholder="Masculino"></li>
+                <li><input placeholder="57012127"></li>
+                <li><input placeholder="javier@gmail.com"></li>
+              </ul>
+            </div>
+          </div>
+        </tab>
+
+        <tab heading="Historia clínica">
+          <div class='row'>
+            <div class='col-sm-4'>
+              <ul>
+                <li>Ficha de identificacion: </li>
+                <li class='li-parrafo'>Antecedentes familiares: </li>
+                <li class='li-parrafo'>Antecedentes personales: </li>
+                <li>Exploración física</li>
+                <li>Pulso lat/min </li>
+                <li>temperatura: </li>
+                <li class='li-parrafo'>Estado físico: </li>
+              </ul>
+            </div>
+            <div class='col-sm-8'>
+              <ul>
+                <li><input></li>
+                <li><input class='input-parrafo'></li>
+                <li><input class='input-parrafo'></li>
+                <li><input></li>
+                <li><input></li>
+                <li><input></li>
+                <li><input class='input-parrafo'></li>
+              </ul>
+            </div>
+          </div>
+        </tab>
+        
+          <tab heading="Diagnóstico">
+            <div class='row'>
+              <div class="col-sm-4">
+                <ul>
+                  <li class='li-parrafo'>Resultados de laboratorio</li>
+                  <li class='li-parrafo'>Pronóstico</li>
+                </ul>
+              </div>
+              <div class='col-sm-8'>
+                <ul>
+                  <li><input class='input-parrafo'></li>
+                  <li><input class='input-parrafo'></li>
+                </ul>
+              </div>
+            </div>
+          </tab>
+
+          <tab heading="Evolución">
+            <div class='row'>
+              <div class='col-sm-4'>
+                <ul>
+                  <li class='li-parrafo'>Signos vitales </li>
+                  <li class='li-parrafo'> Resultados de estudio</li>
+                  <li class='li-parrafo'>Diagnóstico: </li>
+                  <li class='li-parrafo'>Pronóstico: </li>
+                </ul>
+              </div>
+              <div class='col-sm-8'>
+              <li><input class='input-parrafo'></li>
+              <li><input class='input-parrafo'></li>
+              <li><input class='input-parrafo'></li>
+              <li><input class='input-parrafo'></li>
+              </div>
+            </div>
+          </tab>
+      </tabset>
+      <div class='row' style="padding-left: 600px;">
+        <button type="button" class='btn btn-success'
+        (click)='Guardar()'>Guardar</button>
+        <button type="button" class='btn btn-danger'
+        (click)='Borrar()'>Borrar expediente</button>
+      </div>
+    </div>
+
+      <progressbar max="200" [value]="150" type="danger" [striped]="true" [animate]="true"><i>150 / 200</i></progressbar>
+
+    </div>
+  </div>  
+</div>
+
+

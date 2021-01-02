@@ -1,0 +1,37 @@
+<div *ngIf='showValue'>
+        <li><img src='./assets/images/tache.png'(click)='Ocultar()'></li>
+
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink='/Mispacientes'>Mis pacientes</a>
+    </li>
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink='/expediente'>Nuevo expediente</a>
+    </li>
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink ='/citas'>Citas pendientes</a>
+    </li>
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink = '/tablaexpedientes'>Expedientes</a>
+    </li>
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink='/agenda'>Agenda</a>
+    </li>
+    <li>
+        <img src='./assets/images/carpetaicon.png'>
+        <a href="#"
+        routerLink='/receta'>Crear receta</a>
+    </li>
+    
+</div>
+<button type="button" class="btn btn-success" *ngIf='!showValue'
+(click)='Ocultar()'>Mostrar</button>

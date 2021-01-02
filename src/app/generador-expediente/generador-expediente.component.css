@@ -1,0 +1,25 @@
+
+.div-container{ 
+    width: 1319px; 
+    height: 800px;
+    background-color: #6bc2f5
+    }
+input{
+    max-width: 300px;
+    border: 3px solid pink;
+}
+.div-formulario{
+    background-color: azure;
+    width: 1100px;
+    height: 800px;
+}
+.input-parrafo{
+    width: 600px;
+    height: 100px;
+}
+li{
+    padding: 20px;
+}
+.li-parrafo{
+    padding: 50px;
+}

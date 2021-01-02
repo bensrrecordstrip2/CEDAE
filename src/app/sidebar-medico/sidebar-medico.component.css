@@ -1,0 +1,13 @@
+div{
+    background-color: 	 #052538;
+    width: 200px;
+    height: 800px;
+    border: solid 1px azure;
+}
+a{
+    color: rgb(255, 254, 254);
+    padding-left: 15px;
+}
+img{
+    max-width: 15px;
+}

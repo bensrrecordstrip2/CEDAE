@@ -1,0 +1,36 @@
+<div class='row'>
+  <div class='col-sm-2'>    
+    <pm-sidebar-medico></pm-sidebar-medico>
+  </div>
+  <div class='col-sm-6'>
+    <div>
+        <div class='div-formulario'>
+          <h2>Registrar usuario</h2>
+            <li>Tipo de usuario:
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-danger dropdown-toggle"
+                            aria-controls="dropdown-basic">
+                      Dogtor <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic">
+                      <li role="menuitem"><a class="dropdown-item" href="#">Recepcionista</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#">Médico</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#">Paciente</a></li>
+                      <li class="divider dropdown-divider"></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#">Slim</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> 
+        <li>Nombre:<input></li>
+        <li>Apellidos:<input></li>
+        <li>Edad:<input></li>
+      
+        <li>Teléfono:<input></li>
+        <li><button type='button' class="btn btn-success">Registrar</button></li>
+    </div>
+
+    </div>
+  </div>
+</div>

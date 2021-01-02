@@ -1,0 +1,15 @@
+.img-icon{
+    max-height: 20px;
+    max-width: 20px;
+}
+table{
+    text-align: center;
+    width: 900px;
+}
+p{
+    color:azure;
+}
+input{
+    max-width: 300px;
+    border: 3px solid pink;
+}

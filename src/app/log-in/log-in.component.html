@@ -1,0 +1,46 @@
+<div class='row' style='height: 700px;'>
+    <div class='col-sm-6'>
+        <div class='row'>
+            <div class='col-sm-5'>
+            </div>
+            <div class='col-sm-4'>
+                <pm-calendario></pm-calendario>
+                <div class='row'>
+                    <alert type='success' class='alert-md-local'>
+                        <strong>Espera! </strong>Puedes <strong>consultar </strong>Horarios sin iniciar sesión.	 
+                    </alert>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-sm-6'>
+        <div class='card div-formulario'>
+
+            <img src='./assets/images/usuario.png'>
+            <form (ngSubmit)="save()"  [formGroup]="LogInForm">
+            <br> Usuario: <input class='text input-validator' placeholder="Correo:"
+                        formControlName= "User">
+                        <span class="span-invalid" *ngIf="LogInForm.controls.User.invalid && (LogInForm.controls.User.dirty || LogInForm.controls.User.touched)">
+                        <span class="span-invalid" *ngIf="LogInForm.controls.User.errors && LogInForm.controls.User.errors['required']">
+                                <br>El nombre de usuario es requerido</span>
+                            <span class="span-invalid" *ngIf="LogInForm.controls.User.errors && LogInForm.controls.User.errors['email']">
+                                <br>El email es incorrecto</span>
+                        </span>
+            <br> Contraseña: <input class='text input-validator' placeholder="Contraseña" type='password'
+                        formControlName= "Pass">
+                        <span class="span-invalid" *ngIf="LogInForm.controls.Pass.invalid && (LogInForm.controls.Pass.dirty || LogInForm.controls.Pass.touched)">
+                            <span class="span-invalid" *ngIf="LogInForm.controls.Pass.errors && LogInForm.controls.Pass.errors['required']">
+                                <br>La Contraseña es requerida</span>
+                            </span>
+            <a href='#'><br>¿Olvidó su Contraseña?</a>
+            <a href='#'><br>Registrar usuario</a>
+            <button type="submit" class="btn btn-success"
+            [disabled]="LogInForm.invalid">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>    
+</div>
+<router-outlet></router-outlet>
+
+
+

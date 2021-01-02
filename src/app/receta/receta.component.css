@@ -1,0 +1,26 @@
+input{
+    width: 300px;
+    border: 3px solid pink;
+}
+.div-container{
+    background-color: rgb(56, 166, 218);
+    width: 1319px;
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div-formulario{
+    background-color: rgb(235, 241, 243);
+    width: 600px;
+    height: 800px;
+}
+button{
+    align-self: right;
+}
+text{
+    padding-top: 25px;
+}
+li{
+    padding: 25px;
+}

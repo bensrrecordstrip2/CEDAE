@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+  /* background-color:#6bc2f5 */
+/* background: repeating-linear-gradient( 90deg, rgb(8, 5, 36), rgb(8, 5, 36) 20px, #6bc2f5 20px, #6bc2f5 40px);
+ */
+ background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+}
+div.card-header {
+ font-size: large;
+}
+
+div.card {
+  margin-top: 25px
+}
+
+.table {
+  margin-top: 10px
+}
